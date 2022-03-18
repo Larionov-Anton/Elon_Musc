@@ -221,18 +221,59 @@ body {
 
 	// .main-screen__advantages
 
-	&__advantages {}
+	&__advantages {
+		position: absolute;
+		width: 370px;
+		height: 370px;
+		top: 50%;
+		right: 50%;
+		@include tr(200%, -50%, 0);
+	}
 }
 
 .advantages-main-screen {
 
+	display: flex;
+	flex-wrap: wrap;
+
 	// .advantages-main-screen__item
 
-	&__item {}
+	&__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 172px;
+		height: 172px;
+		background-color: rgb(255, 255, 255, 0.03);
+		margin: 0px 10px 0px 0px;
+	}
 
 	// .advantages-main-screen__text
 
-	&__text {}
+	&__text {
+		
+		font-family: 'Museo Sans Cyrl';
+		font-size: 16px;
+		line-height: 1.2;
+		font-weight: 100;
+		color: #ffffff;
+		text-align: center;
+	}
+
+	// .advantages-main-screen__text--bold
+
+	&__text--bold {
+		display: inline-block;
+		margin: 15px 0px 0px 0px;
+		font-size: 60px;
+		font-weight: 700;
+	}
+
+	// .advantages-main-screen__text--fzmore
+
+	&__text--fzmore {
+		font-size: 18px;
+	}
 }
 
 //====================================================================================================

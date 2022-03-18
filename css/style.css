@@ -995,3 +995,55 @@ body.ie .ibg img {
 	z-index: 2;
 	background: url("../../img/icons/line-button.png") 0 0 no-repeat;
 }
+.main-screen__advantages {
+	position: absolute;
+	width: 370px;
+	height: 370px;
+	top: 50%;
+	right: 50%;
+	transform: translate3d(200%, -50%, 0);
+	-webkit-transform: translate3d(200%, -50%, 0);
+	-ms-transform: translate3d(200%, -50%, 0);
+	-o-transform: translate3d(200%, -50%, 0);
+	-moz-transform: translate3d(200%, -50%, 0);
+}
+
+.advantages-main-screen {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+.advantages-main-screen__item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 172px;
+	height: 172px;
+	background-color: rgba(255, 255, 255, 0.03);
+	margin: 0px 10px 0px 0px;
+}
+.advantages-main-screen__text {
+	font-family: "Museo Sans Cyrl";
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: 100;
+	color: #ffffff;
+	text-align: center;
+}
+.advantages-main-screen__text--bold {
+	display: inline-block;
+	margin: 15px 0px 0px 0px;
+	font-size: 60px;
+	font-weight: 700;
+}
+.advantages-main-screen__text--fzmore {
+	font-size: 18px;
+}
