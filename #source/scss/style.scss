@@ -1,0 +1,242 @@
+//<МИКСИНЫ>===============================================================================================
+@import "mixins.scss";
+//</МИКСИНЫ>===============================================================================================
+
+//<ШРИФТЫ>===============================================================================================
+
+//<Подключаем шрифты>=======================================================================================
+
+//</Подключаем шрифты>=======================================================================================
+
+//<Иконочные шрифты>==========================================================================================
+
+//</Иконочные шрифты>==========================================================================================
+
+//<Шрифт по умолчанию>==========================================================================================
+$fontfamily: "";
+//</Шрифт по умолчанию>==========================================================================================
+@font-face {
+	font-family: 'Museo Sans Cyrl';
+	src: url('../fonts/MuseoSansCyrl300.eot');
+	src: local('☺'), url('../fonts/MuseoSansCyrl300.woff') format('woff'), url('../fonts/MuseoSansCyrl300.ttf') format('truetype'), url('../fonts/MuseoSansCyrl300.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Museo Sans Cyrl';
+	src: url('../fonts/MuseoSansCyrl700.eot');
+	src: local('☺'), url('../fonts/MuseoSansCyrl700.woff') format('woff'), url('../fonts/MuseoSansCyrl700.ttf') format('truetype'), url('../fonts/MuseoSansCyrl700.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+//</ШРИФТЫ>=======================================================================================================
+
+//<ПЕРЕМЕННЫЕ>===========================================================================================================
+$minwidth: 320px;
+$mw: 1170;
+$md1: $mw + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+//</ПЕРЕМЕННЫЕ>===========================================================================================================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "null.scss";
+body {
+	color: #000;
+	font-size: 14px;
+	&.lock {
+		overflow: hidden;
+	}
+}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+	@include flexbox();
+	flex-direction: column;
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+	&.loaded {
+	}
+}
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+.container {
+	max-width: $mw + px;
+	margin: 0 auto;
+	width: 100%;
+	@media (max-width: $md1+px) {
+		max-width: 970px;
+	}
+	@media (max-width: $md2+px) {
+		max-width: 750px;
+	}
+	@media (max-width: $md3+px) {
+		max-width: none;
+		padding: 0 10px;
+	}
+}
+//</ОСНОВНАЯ СЕТКА>===========================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+@import "forms.scss";
+@import "ui.scss";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+//@import "../../js/fancybox/jquery.fancybox.scss";
+//@import "datepicker.scss";
+//@import "fontawesome.scss";
+//@import "popover.min.scss";
+//@import "baguetteBox.scss";
+//@import "pagging.scss";
+//@import "icons.scss";
+@import "popup.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "home.scss";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+
+.main-screen {
+
+	min-height: 100vh;
+	@include flexbox();
+	flex-direction: column;
+
+	// .main-screen__image
+
+	&__image {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	// .main-screen__tittle
+
+	&__tittle {
+		border: 2px solid #fff;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 200px;
+		left: 0;
+		z-index: 2;
+		width: 440px;
+		height: 85px;
+		padding-top: 10px;
+		background-image: linear-gradient(-90.0deg, #ff3f04 0%, #ffffff 90%, #ffffff 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-family: 'Museo Sans Cyrl';
+		font-size: 58px;
+		line-height: 0.6em;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #ffffff;
+		span{
+			font-size: 25px;
+			font-weight: 300;
+			text-transform: none;
+		}
+
+	}
+
+	// .main-screen__button-body 
+
+	&__button-body {
+		position: relative;
+		position: absolute;
+		width: 581px;
+		height: 85px;
+		top: 57%;
+		left: 50%;
+		@include tr(-100%, 0, 0);
+	}
+
+	// .main-screen__button
+
+	&__button {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 3;
+		width: 180px;
+		height: 35px;
+		border-style: solid;
+		border-width: 1px;
+		border-image-source: linear-gradient(189.0deg, #263e66 20%, #09213d 40%, #111f2d 61%, #23599c 79%);
+		border-image-slice: 1;
+		background-origin: border-box;
+		background-clip: content-box, border-box;
+		padding: 0 20px 0 20px;
+		&:after {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			bottom: -10px;
+			left: -10px;
+			z-index: 3;
+			width: 25px;
+			height: 25px;
+			background: url('../../img/icons/corner-left.png') center no-repeat;
+		}
+		&:before {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			top: -10px;
+			right: -10px;
+			z-index: 3;
+			width: 25px;
+			height: 25px;
+			background: url('../../img/icons/corner-right.png') center no-repeat;
+		}
+
+		span {
+			font-family: 'Museo Sans Cyrl';
+			font-size: 14px;
+			line-height: 2.4;
+			font-weight: 100;
+			color: #ffffff;
+		}
+
+	}
+
+	// .main-screen__line
+
+	&__line {
+		position: absolute;
+		width: 406px;
+		height: 57px;
+		top: 32%;
+		left: 30.2%;
+		z-index: 2;
+		background: url('../../img/icons/line-button.png') 0 0 no-repeat;
+	}
+
+	// .main-screen__advantages
+
+	&__advantages {}
+}
+
+.advantages-main-screen {
+
+	// .advantages-main-screen__item
+
+	&__item {}
+
+	// .advantages-main-screen__text
+
+	&__text {}
+}
+
+//====================================================================================================
+
+//</ОСНОВНОЙ БЛОК>====================================================================================================
