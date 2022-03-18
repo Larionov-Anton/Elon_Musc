@@ -900,15 +900,17 @@ body.ie .ibg img {
 	left: 0;
 }
 .main-screen__tittle {
-	border: 2px solid #fff;
 	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 200px;
-	left: 0;
-	z-index: 2;
 	width: 440px;
 	height: 85px;
+	top: 32%;
+	left: 50%;
+	transform: translate3d(-140%, 0, 0);
+	-webkit-transform: translate3d(-140%, 0, 0);
+	-ms-transform: translate3d(-140%, 0, 0);
+	-o-transform: translate3d(-140%, 0, 0);
+	-moz-transform: translate3d(-140%, 0, 0);
+	z-index: 2;
 	padding-top: 10px;
 	background-image: -webkit-gradient(linear, right top, left top, from(#ff3f04), color-stop(90%, #ffffff), to(#ffffff));
 	background-image: -o-linear-gradient(right, #ff3f04 0%, #ffffff 90%, #ffffff 100%);
