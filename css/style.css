@@ -905,11 +905,11 @@ body.ie .ibg img {
 	height: 85px;
 	top: 32%;
 	left: 50%;
-	transform: translate3d(-140%, 0, 0);
-	-webkit-transform: translate3d(-140%, 0, 0);
-	-ms-transform: translate3d(-140%, 0, 0);
-	-o-transform: translate3d(-140%, 0, 0);
-	-moz-transform: translate3d(-140%, 0, 0);
+	transform: translate3d(-155%, 0, 0);
+	-webkit-transform: translate3d(-155%, 0, 0);
+	-ms-transform: translate3d(-155%, 0, 0);
+	-o-transform: translate3d(-155%, 0, 0);
+	-moz-transform: translate3d(-155%, 0, 0);
 	z-index: 2;
 	padding-top: 10px;
 	background-image: -webkit-gradient(linear, right top, left top, from(#ff3f04), color-stop(90%, #ffffff), to(#ffffff));
@@ -985,6 +985,12 @@ body.ie .ibg img {
 	line-height: 2.4;
 	font-weight: 100;
 	color: #ffffff;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.main-screen__button:hover span {
+	color: #e38520;
 }
 .main-screen__line {
 	position: absolute;
@@ -1027,8 +1033,39 @@ body.ie .ibg img {
 	        align-items: center;
 	width: 172px;
 	height: 172px;
-	background-color: rgba(255, 255, 255, 0.03);
 	margin: 0px 10px 0px 0px;
+}
+.advantages-main-screen__item--min45deg {
+	background: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(-45deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.advantages-main-screen__item--min45deg:hover {
+	background: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.advantages-main-screen__item--45deg {
+	background: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(45deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.advantages-main-screen__item--45deg:hover {
+	background: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.advantages-main-screen__item--225deg {
+	background: -o-linear-gradient(195deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(255deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.advantages-main-screen__item--225deg:hover {
+	background: -o-linear-gradient(225deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(225deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.advantages-main-screen__item--min225deg {
+	background: -o-linear-gradient(315deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(-225deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.advantages-main-screen__item--min225deg:hover {
+	background: -o-linear-gradient(315deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(-225deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
 }
 .advantages-main-screen__text {
 	font-family: "Museo Sans Cyrl";
