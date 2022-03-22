@@ -144,7 +144,7 @@ body {
 		position: absolute;
 		width: 7.6em;
 		height: 1.5em;
-		top: 32%;
+		top: 12%;
 		left: 0;
 		z-index: 2;
 		padding-top: 10px;
@@ -175,7 +175,7 @@ body {
 		position: absolute;
 		width: 581px;
 		height: 85px;
-		top: 57%;
+		top: 37%;
 		left: 0;
 		@media (max-width:$md1+px){
 			 position: static;
@@ -264,8 +264,7 @@ body {
 
 	&__advantages {
 		position: absolute;
-
-		top: 50%;
+		top: 35%;
 		right: 0;
 		@include tr(0, -50%, 0);
 		
