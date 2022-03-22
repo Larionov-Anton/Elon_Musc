@@ -108,6 +108,7 @@ body {
 	min-height: 100vh;
 	@include flexbox();
 	flex-direction: column;
+	padding: 130px 0px 0px 0px;
 
 	// .main-screen__image
 
@@ -127,14 +128,22 @@ body {
 		max-width: 1210px;
 		margin: 0 auto;
 		width: 100%;
+		font-size: 16px;
+		@media (max-width:$md1+px){
+			max-width: 950px; 
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: 14px;
+		}
 	}
 
 	// .main-screen__tittle
 
 	&__tittle {
 		position: absolute;
-		width: 440px;
-		height: 85px;
+		width: 7.6em;
+		height: 1.5em;
 		top: 32%;
 		left: 0;
 		z-index: 2;
@@ -143,17 +152,20 @@ body {
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		font-family: 'Museo Sans Cyrl';
-		font-size: 58px;
+		font-size: 3.6em;
 		line-height: 0.6em;
 		font-weight: 700;
 		text-transform: uppercase;
 		color: #ffffff;
 		span{
-			font-size: 25px;
+			font-size: 0.4em;
 			font-weight: 300;
 			text-transform: none;
 		}
-
+		@media (max-width:$md1+px){
+			 position: static; 
+			 margin: 0px 0px 0.6em 0px;
+		}
 	}
 
 	// .main-screen__button-body 
@@ -165,11 +177,18 @@ body {
 		height: 85px;
 		top: 57%;
 		left: 0;
+		@media (max-width:$md1+px){
+			 position: static;
+			 width: 180px;
+			 height: 35px; 
+			 margin: 0px 0px 30px 0px;
+		}
 	}
 
 	// .main-screen__button
 
 	&__button {
+		display: inline-block;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -183,6 +202,9 @@ body {
 		background-origin: border-box;
 		background-clip: content-box, border-box;
 		padding: 0 20px 0 20px;
+		@media (max-width:$md1+px){
+			 position: static; 
+		}
 		
 		&:after {
 			content: '';
@@ -233,17 +255,24 @@ body {
 		left: 34.5%;
 		z-index: 2;
 		background: url('../../img/icons/line-button.png') 0 0 no-repeat;
+		@media (max-width:$md1+px){
+			 display: none; 
+		}
 	}
 
 	// .main-screen__advantages
 
 	&__advantages {
 		position: absolute;
-		width: 370px;
-		height: 370px;
+
 		top: 50%;
 		right: 0;
 		@include tr(0, -50%, 0);
+		
+		@media (max-width:$md1+px){
+			 position: static; 
+			 @include tr(0, 0, 0);
+		}
 	}
 }
 
@@ -251,6 +280,14 @@ body {
 
 	display: flex;
 	flex-wrap: wrap;
+	max-width: 370px;
+	max-height: 370px;
+	font-size: 16px;
+	@media (max-width:$md1+px){
+		font-size: 14px; 
+		max-width: 100%;
+	}
+
 
 	// .advantages-main-screen__item
 
@@ -258,8 +295,8 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 172px;
-		height: 172px;
+		width: 10.75em;
+		height: 10.75em;
 		margin: 0px 10px 0px 0px;
 	
 	
@@ -306,7 +343,6 @@ body {
 	&__text {
 		
 		font-family: 'Museo Sans Cyrl';
-		font-size: 16px;
 		line-height: 1.2;
 		font-weight: 100;
 		color: #ffffff;
@@ -318,14 +354,14 @@ body {
 	&__text--bold {
 		display: inline-block;
 		margin: 15px 0px 0px 0px;
-		font-size: 60px;
+		font-size: 3.75em;
 		font-weight: 700;
 	}
 
 	// .advantages-main-screen__text--fzmore
 
 	&__text--fzmore {
-		font-size: 18px;
+		font-size: 1.125em;
 	}
 }
 

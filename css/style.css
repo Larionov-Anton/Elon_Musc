@@ -956,6 +956,11 @@ body.ie .ibg img {
 .menu__list li:hover {
 	color: #b1b1b1;
 }
+@media (max-width: 1222px) {
+	.menu__list li {
+		margin: 0px 15px 0px 0px;
+	}
+}
 .icon-menu {
 	display: block;
 	position: absolute;
@@ -1012,6 +1017,7 @@ body.ie .ibg img {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
+	padding: 130px 0px 0px 0px;
 }
 .main-screen__image {
 	position: absolute;
@@ -1026,11 +1032,28 @@ body.ie .ibg img {
 	max-width: 1210px;
 	margin: 0 auto;
 	width: 100%;
+	font-size: 16px;
+}
+@media (max-width: 1222px) {
+	.main-screen__body {
+		max-width: 950px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		font-size: 14px;
+	}
 }
 .main-screen__tittle {
 	position: absolute;
-	width: 440px;
-	height: 85px;
+	width: 7.6em;
+	height: 1.5em;
 	top: 32%;
 	left: 0;
 	z-index: 2;
@@ -1041,16 +1064,22 @@ body.ie .ibg img {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-family: "Museo Sans Cyrl";
-	font-size: 58px;
+	font-size: 3.6em;
 	line-height: 0.6em;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #ffffff;
 }
 .main-screen__tittle span {
-	font-size: 25px;
+	font-size: 0.4em;
 	font-weight: 300;
 	text-transform: none;
+}
+@media (max-width: 1222px) {
+	.main-screen__tittle {
+		position: static;
+		margin: 0px 0px 0.6em 0px;
+	}
 }
 .main-screen__button-body {
 	position: relative;
@@ -1060,7 +1089,16 @@ body.ie .ibg img {
 	top: 57%;
 	left: 0;
 }
+@media (max-width: 1222px) {
+	.main-screen__button-body {
+		position: static;
+		width: 180px;
+		height: 35px;
+		margin: 0px 0px 30px 0px;
+	}
+}
 .main-screen__button {
+	display: inline-block;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1074,6 +1112,11 @@ body.ie .ibg img {
 	background-origin: border-box;
 	background-clip: content-box, border-box;
 	padding: 0 20px 0 20px;
+}
+@media (max-width: 1222px) {
+	.main-screen__button {
+		position: static;
+	}
 }
 .main-screen__button:after {
 	content: "";
@@ -1119,10 +1162,13 @@ body.ie .ibg img {
 	z-index: 2;
 	background: url("../../img/icons/line-button.png") 0 0 no-repeat;
 }
+@media (max-width: 1222px) {
+	.main-screen__line {
+		display: none;
+	}
+}
 .main-screen__advantages {
 	position: absolute;
-	width: 370px;
-	height: 370px;
 	top: 50%;
 	right: 0;
 	transform: translate3d(0, -50%, 0);
@@ -1131,6 +1177,16 @@ body.ie .ibg img {
 	-o-transform: translate3d(0, -50%, 0);
 	-moz-transform: translate3d(0, -50%, 0);
 }
+@media (max-width: 1222px) {
+	.main-screen__advantages {
+		position: static;
+		transform: translate3d(0, 0, 0);
+		-webkit-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		-o-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+	}
+}
 
 .advantages-main-screen {
 	display: -webkit-box;
@@ -1138,6 +1194,15 @@ body.ie .ibg img {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
+	max-width: 370px;
+	max-height: 370px;
+	font-size: 16px;
+}
+@media (max-width: 1222px) {
+	.advantages-main-screen {
+		font-size: 14px;
+		max-width: 100%;
+	}
 }
 .advantages-main-screen__item {
 	display: -webkit-box;
@@ -1149,8 +1214,8 @@ body.ie .ibg img {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	width: 172px;
-	height: 172px;
+	width: 10.75em;
+	height: 10.75em;
 	margin: 0px 10px 0px 0px;
 }
 .advantages-main-screen__item--min45deg {
@@ -1187,7 +1252,6 @@ body.ie .ibg img {
 }
 .advantages-main-screen__text {
 	font-family: "Museo Sans Cyrl";
-	font-size: 16px;
 	line-height: 1.2;
 	font-weight: 100;
 	color: #ffffff;
@@ -1196,9 +1260,9 @@ body.ie .ibg img {
 .advantages-main-screen__text--bold {
 	display: inline-block;
 	margin: 15px 0px 0px 0px;
-	font-size: 60px;
+	font-size: 3.75em;
 	font-weight: 700;
 }
 .advantages-main-screen__text--fzmore {
-	font-size: 18px;
+	font-size: 1.125em;
 }
