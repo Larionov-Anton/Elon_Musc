@@ -77,7 +77,7 @@
 		height: 7px;
 		top: -1px;
 		left: -1px;
-		background: url('../../img/icons/corner_left_top.png') center no-repeat;
+		background: url('../../img/icons/logo_corner_left_top.png') center no-repeat;
 	}
 
 	// .heder__corner--1
@@ -109,7 +109,8 @@
 			height: 100%;
 			top: 0;
 			left: 0;
-			background-color: #be4220;	
+			// background-color: #0a141d;
+			background: url('../../img/main.jpg') 0 0 / cover no-repeat ;	
 			@include tr(0, -200%, 0);
 			@include anim(1s,0s);
 			&.active {
@@ -145,9 +146,13 @@
 				margin: 0px 15px 0px 0px; 
 			}
 			@media (max-width:$md2+px){
-				margin: 0px 0px 30px 0px;
-				font-size: 26px;
+				margin: 0px 0px 70px 0px;
+				font-size: 40px;
 				text-align: center;
+			}
+			@media (max-width:$md4+px){
+				margin: 0px 0px 40px 0px;
+				font-size: 30px; 
 			}
 		}
 	}
