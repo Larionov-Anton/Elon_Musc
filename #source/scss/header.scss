@@ -9,9 +9,8 @@
 	z-index: 3;
 	border: 1px solid rgb(152, 147, 147, 0.21);
 
-	@media (max-width:$md2+px){
-
-		
+	@media (max-width:$md4+px){
+		height: 70px;
 	}
 	// .header__row
 
@@ -39,10 +38,15 @@
 		img {
 			@include tr(0, -25%, 0);
 		}
-		@media (max-width:$md2+px){
-
+		@media (max-width:$md4+px){
+			width: 215px;
+			height: 70px;
+			img {
+				width: 200px;
+			}
 		}
 	}
+
 
 	// .heder__corner--1
 
@@ -106,10 +110,10 @@
 			top: 0;
 			left: 0;
 			background-color: #be4220;	
-			margin: -200% 0px 0px 0px;
+			@include tr(0, -200%, 0);
 			@include anim(1s,0s);
 			&.active {
-				margin: 0px 0px 0px 0px;
+				@include tr(0, 0, 0);
 			}
 		}
 	}
@@ -166,10 +170,11 @@
 	.icon-menu{
 		display: none;
 		position: absolute;
-		top: 41px;
+		top: 50%;
 		right: 10px;
 		width:30px;
 		height: 18px;
+		@include tr(0, -50%, 0);
 		cursor: pointer;
 		z-index: 5;
 		span{@include anim(0.3s,0s);top: 8px;left: 0px;position: absolute;width: 100%;height: 2px;background-color: #fff;
