@@ -56,7 +56,7 @@
 		height: 7px;
 		bottom: -1px;
 		left: -1px;
-		background: url('../../img/icons/logo_corner_left_bottom.png') center no-repeat;
+		background: url('../img/icons/logo_corner_left_bottom.png') center no-repeat;
 	}
 
 	// .heder__corner--1
@@ -67,7 +67,7 @@
 		height: 7px;
 		top: -1px;
 		right: -1px;
-		background: url('../../img/icons/logo_corner_right_top.png') center no-repeat;
+		background: url('../img/icons/logo_corner_right_top.png') center no-repeat;
 	}
 		// .heder__corner--1
 	
@@ -77,7 +77,7 @@
 		height: 7px;
 		top: -1px;
 		left: -1px;
-		background: url('../../img/icons/logo_corner_left_top.png') center no-repeat;
+		background: url('../img/icons/logo_corner_left_top.png') center no-repeat;
 	}
 
 	// .heder__corner--1
@@ -88,7 +88,7 @@
 		height: 7px;
 		bottom: -1px;
 		right: -1px;
-		background: url('../../img/icons/logo_corner_bottom_right.png') center no-repeat;
+		background: url('../img/icons/logo_corner_bottom_right.png') center no-repeat;
 	}
 
 	// .header__menu
@@ -110,7 +110,7 @@
 			top: 0;
 			left: 0;
 			// background-color: #0a141d;
-			background: url('../../img/main.jpg') 0 0 / cover no-repeat ;	
+			background: url('../img/main.jpg') 0 0 / cover no-repeat ;	
 			@include tr(0, -200%, 0);
 			@include anim(1s,0s);
 			&.active {
