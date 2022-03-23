@@ -88,7 +88,7 @@ body {
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
-//@import "../../js/fancybox/jquery.fancybox.scss";
+//@import "../js/fancybox/jquery.fancybox.scss";
 //@import "datepicker.scss";
 //@import "fontawesome.scss";
 //@import "popover.min.scss";
@@ -222,7 +222,7 @@ body {
 			z-index: 3;
 			width: 25px;
 			height: 25px;
-			background: url('../../img/icons/corner-left.png') center no-repeat;
+			background: url('../img/icons/corner-left.png') center no-repeat;
 		}
 		&:before {
 			content: '';
@@ -233,7 +233,7 @@ body {
 			z-index: 3;
 			width: 25px;
 			height: 25px;
-			background: url('../../img/icons/corner-right.png') center no-repeat;
+			background: url('../img/icons/corner-right.png') center no-repeat;
 		}
 
 		span {
@@ -261,7 +261,7 @@ body {
 		top: 58.5%;
 		left: 34.5%;
 		z-index: 2;
-		background: url('../../img/icons/line-button.png') 0 0 no-repeat;
+		background: url('../img/icons/line-button.png') 0 0 no-repeat;
 		@media (max-width:$md1+px){
 			 display: none; 
 		}
